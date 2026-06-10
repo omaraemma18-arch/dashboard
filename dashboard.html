@@ -25,7 +25,7 @@ tr:nth-child(even) {
         *,body{
             padding: 0%;
             box-sizing: border-box;
-            background-color: aquamarine;
+            background-color:whitesmoke;
             margin: 0%;
         }
         .container{
@@ -35,17 +35,46 @@ tr:nth-child(even) {
              display: flex;
              margin: px;
              flex-direction: column;
+             
+        }
+        .card-container{
+          background-color:green;
+          margin: 10px;
+          padding: 12px;
+          border-radius: 16px;
+          display: flex;
+          flex-direction: column;
+        }
+        #quick-access-section{
+         /* background-color: aqua;*/
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 17px;
+
+        }
+        #cards-section{
+          background-color: aqua;
+          display: flex;
+          padding: 14px;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
+  <div>
         <div class="card-container">
-            <div id="quick-access-section"></div>
+            
+          <div id="quick-access-section">
             <h1>Quick Access</h1>
             <p>....</p>
-            <div id="cards-section"></div>
+             
+          </div> 
+        
+        <div id="cards-section">
+              
             <section>
                 <p>No.of technicians</p>
                 <p><span>123 tech</span> 23 online</p>
@@ -55,47 +84,49 @@ tr:nth-child(even) {
             <section><p>No.of customers</p>
                 <p><span>123 </span> 23 online</p></section>
             <section><p>inventory</p>
-                <p><span>123 spare parts</span></p></section>
+                <p><span>123 spare parts</span></p>
+              </section>
         </div>
-
+</div>
+<div class="table-section">
     <table>
     <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Car owner</th>
+    <th>Car name</th>
+    <th>No. plate</th>
   </tr>
   <tr>
     <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>Mercides benz</td>    <td>UA 432AD</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>Aber Moctezuma</td>
+    <td>Toyota</td>
+    <td>UA 123AF</td>
   </tr>
   <tr>
     <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
+    <td>AUDI</td>
+    <td>UA 612AS</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
+    <td>Island Tradi</td>
+    <td>Mitshubish</td>
+    <td>UA 144DS</td>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
+    <td> Bacchus Winecellars</td>
+    <td>Land rover</td>
+    <td>UA 434GH</td>
   </tr>
   <tr>
     <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
+    <td>TOYOTA</td>
+    <td>UA 536SS</td>
   </tr>
 </table>
-</div>
 
+
+</div>
 </body>
 </html>

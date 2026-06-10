@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyera Bay Services - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class=""> Oyera Bay Services</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link active">Dashboard</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="welcome-section">
+                <h2>Welcome to Oyera Bay Services</h2>
+                <p>Streamline operations and visualize your data with our intuitive dashboards.</p>
+            </section>
+
+            <!-- Stats Cards -->
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <h3>Total techinicians</h3>
+                    <p class="stat-value">50</p>
+                    <span class="stat-change positive">12 online</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <h3>TOTAL CUSTOMERS</h3>
+                    <p class="stat-value">11</p>
+                    <span class="stat-change positive">7 available</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <h3>INVENTORY</h3>
+                    <p class="stat-value">18 spear parts </p>
+                    <span class="stat-change positive">11 available</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <h3>Pending Issues</h3>
+                    <p class="stat-value">47</p>
+                    <span class="stat-change negative">53% done✅</span>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="actions-section">
+                <h3>NEW CUSTOMER DATA</h3>
+                <div class="action-buttons">
+                    <button class="action-btn" onclick="addItem()">➕ Customer name</button>
+                    <button class="action-btn" onclick="exportData()">📄 Car name</button>
+                    <button class="action-btn" onclick="generateReport()">📄 Number plate</button>
+                    <button class="action-btn" onclick="syncData()">📥 Problem</button>
+                </div>
+            </section>
+
+            <!-- Items Table -->
+            <section class="items-section">
+                <h3>CARS BEING REPARED</h3>
+                <div class="table-responsive">
+                    <table class="items-table">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th>Priority</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="itemsTable">
+                            <tr>
+                                <td>#001</td>
+                                <td>Bridget Ruth</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td><span class="priority high">flat tyre</span></td>
+                                <td>2026-06-08</td>
+                                <td><button class="edit-btn">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>#002</td>
+                                <td>mukasa ben</td>
+                                <td><span class="status in-progress">In Progress</span></td>
+                                <td><span class="priority high">engine failure</span></td>
+                                <td>2026-06-07</td>
+                                <td><button class="edit-btn">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>#003</td>
+                                <td>Simon buttin</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td><span class="priority medium">flat tyre</span></td>
+                                <td>2026-06-09</td>
+                                <td><button class="edit-btn">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>#004</td>
+                                <td>peter mukasa</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td><span class="priority low">replace oil</span></td>
+                                <td>2026-06-10</td>
+                                <td><button class="edit-btn">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Oyera Bay Services. All rights reserved.</p>
+            <p>Last Updated: <span id="lastUpdate">June 9, 2026</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
